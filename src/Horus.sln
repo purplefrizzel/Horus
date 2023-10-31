@@ -4,9 +4,37 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "services", "services", "{40
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "libs", "libs", "{F4B736D0-6D28-499E-A354-9B228DA8A6F0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Horus.Shared.Diagnostics", "libs\Horus.Shared.Diagnostics\Horus.Shared.Diagnostics.csproj", "{828EE680-7E16-4A9B-AA6F-F17B34B07A3A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "bbc-weather", "bbc-weather", "{9A7BA41F-5164-47B6-9719-B7D3D9BEC71E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Horus.BBC.Core", "services\bbc-weather\Horus.BBC.Core\Horus.BBC.Core.csproj", "{BE7D4551-2C4F-48A9-8992-DFF8EE1B7A8E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Horus.BBC.RpcService", "services\bbc-weather\Horus.BBC.RpcService\Horus.BBC.RpcService.csproj", "{6333A216-01DD-48B1-9932-3BA7FDAFDDDB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{828EE680-7E16-4A9B-AA6F-F17B34B07A3A} = {F4B736D0-6D28-499E-A354-9B228DA8A6F0}
+		{9A7BA41F-5164-47B6-9719-B7D3D9BEC71E} = {404B7DF9-40A1-4D0C-A9F0-B8919638DACA}
+		{BE7D4551-2C4F-48A9-8992-DFF8EE1B7A8E} = {9A7BA41F-5164-47B6-9719-B7D3D9BEC71E}
+		{6333A216-01DD-48B1-9932-3BA7FDAFDDDB} = {9A7BA41F-5164-47B6-9719-B7D3D9BEC71E}
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{828EE680-7E16-4A9B-AA6F-F17B34B07A3A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{828EE680-7E16-4A9B-AA6F-F17B34B07A3A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{828EE680-7E16-4A9B-AA6F-F17B34B07A3A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{828EE680-7E16-4A9B-AA6F-F17B34B07A3A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE7D4551-2C4F-48A9-8992-DFF8EE1B7A8E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE7D4551-2C4F-48A9-8992-DFF8EE1B7A8E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE7D4551-2C4F-48A9-8992-DFF8EE1B7A8E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE7D4551-2C4F-48A9-8992-DFF8EE1B7A8E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6333A216-01DD-48B1-9932-3BA7FDAFDDDB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6333A216-01DD-48B1-9932-3BA7FDAFDDDB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6333A216-01DD-48B1-9932-3BA7FDAFDDDB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6333A216-01DD-48B1-9932-3BA7FDAFDDDB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

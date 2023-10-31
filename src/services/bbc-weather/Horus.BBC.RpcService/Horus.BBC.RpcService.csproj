@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net7.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="protobuf-net.Grpc.AspNetCore" Version="1.1.1" />
+        <PackageReference Include="protobuf-net.Grpc.AspNetCore.Reflection" Version="1.1.1" />
+        <PackageReference Include="System.ServiceModel.Primitives" Version="6.1.0" />
+    </ItemGroup>
+    
+    <ItemGroup>
+      <ProjectReference Include="..\..\..\libs\Horus.Shared.Diagnostics\Horus.Shared.Diagnostics.csproj" />
+      <ProjectReference Include="..\Horus.BBC.Core\Horus.BBC.Core.csproj" />
+    </ItemGroup>
+
+</Project>
